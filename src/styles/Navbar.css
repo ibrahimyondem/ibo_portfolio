@@ -1,0 +1,111 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 0;
+  transition: all var(--transition-normal);
+}
+
+.navbar.scrolled {
+  background: rgba(10, 10, 10, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-color) !important;
+  transition: var(--transition-fast);
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.nav-link {
+  color: var(--text-primary) !important;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0 1rem;
+  padding: 0.5rem 0 !important;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fork-btn {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.fork-btn-inner {
+  background: var(--accent-gradient) !important;
+  color: var(--bg-dark) !important;
+  border: none !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  transition: all var(--transition-normal) !important;
+  box-shadow: var(--shadow-sm);
+  line-height: 1.5;
+  display: inline-flex;
+  align-items: center;
+}
+
+.fork-btn-inner:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg) !important;
+  filter: brightness(1.1);
+}
+
+.navbar-toggler {
+  border: 2px solid var(--primary-color) !important;
+  padding: 0.5rem !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    margin: 0.5rem 0;
+    padding: 0.75rem 0 !important;
+    text-align: left;
+  }
+  
+  .fork-btn {
+    margin-left: 0;
+    margin-top: 1rem;
+    justify-content: flex-start;
+  }
+  
+  .fork-btn-inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.75rem 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+}

@@ -1,12 +1,24 @@
-import { useState } from 'react'
-
+import React from "react";
+import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/global.css";
 
 function App() {
   return (
-    <div>
-      <h1>Portfolio Home</h1>
+    <div className="App">
+      <NavBar />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

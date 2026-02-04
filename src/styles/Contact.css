@@ -1,0 +1,142 @@
+.contact-section {
+  padding: 6rem 0;
+  background: var(--bg-dark);
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-content p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.social-link {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 2px solid rgba(255, 215, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  transition: var(--transition-normal);
+  color: var(--text-primary);
+}
+
+.social-link:hover {
+  background: var(--primary-color);
+  color: var(--bg-dark);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+}
+
+.contact-email {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: var(--accent-gradient);
+  color: var(--bg-dark);
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-email:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  color: var(--bg-dark);
+}
+
+.footer {
+  padding: 2rem 0;
+  background: var(--bg-section);
+  text-align: center;
+  border-top: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.footer p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 991px) {
+  .contact-section {
+    padding: 4rem 0;
+  }
+  
+  .contact-content p {
+    font-size: 1rem;
+  }
+  
+  .social-links {
+    gap: 1.75rem;
+    margin: 2.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 0;
+  }
+  
+  .contact-content {
+    padding: 0 1rem;
+  }
+  
+  .contact-email {
+    padding: 0.875rem 2rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 2.5rem 0;
+  }
+  
+  .contact-content p {
+    font-size: 0.9375rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-links {
+    gap: 1.25rem;
+    margin: 2rem 0;
+  }
+  
+  .social-link {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .contact-email {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .footer p {
+    font-size: 0.85rem;
+  }
+}

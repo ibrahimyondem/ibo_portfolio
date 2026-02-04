@@ -1,0 +1,257 @@
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 8rem 0 4rem;
+  background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-section) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+}
+
+.home-header {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.greeting {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.wave {
+  display: inline-block;
+  animation: wave 2.5s ease-in-out infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30% {
+    transform: rotate(14deg);
+  }
+  20%, 40% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+}
+
+.heading-name {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  margin: 1rem 0;
+  line-height: 1.1;
+}
+
+.main-name {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+}
+
+.typewriter-text {
+  margin: 2rem 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+  color: var(--text-secondary);
+  min-height: 3rem;
+}
+
+.typewriter-text span {
+  color: var(--primary-color);
+}
+
+.home-actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.home-image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInRight 0.8s ease-out 0.2s both;
+  position: relative;
+}
+
+.profile-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 0 40px rgba(255, 215, 0, 0.4);
+  transition: var(--transition-normal);
+  animation: float 3s ease-in-out infinite, glow 2s ease-in-out infinite;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 60px rgba(255, 215, 0, 0.6);
+}
+
+.tech-icon {
+  position: absolute;
+  font-size: 2.5rem;
+  animation: float 3s ease-in-out infinite;
+  opacity: 0.8;
+  transition: var(--transition-fast);
+}
+
+.tech-icon:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.tech-icon:nth-child(1) {
+  top: 10%;
+  left: -10%;
+  animation-delay: 0s;
+}
+
+.tech-icon:nth-child(2) {
+  top: 5%;
+  right: -5%;
+  animation-delay: 0.5s;
+}
+
+.tech-icon:nth-child(3) {
+  bottom: 15%;
+  left: -5%;
+  animation-delay: 1s;
+}
+
+.tech-icon:nth-child(4) {
+  bottom: 10%;
+  right: -10%;
+  animation-delay: 1.5s;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+.scroll-indicator span {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 991px) {
+  .home-section {
+    padding: 6rem 0 3rem;
+  }
+  
+  .home-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .home-actions {
+    justify-content: center;
+  }
+  
+  .profile-image {
+    max-width: 300px;
+  }
+  
+  .tech-icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    padding: 5rem 0 2rem;
+  }
+  
+  .home-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .home-actions {
+    justify-content: center;
+  }
+  
+  .profile-image {
+    max-width: 300px;
+  }
+  
+  .tech-icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .home-actions .btn {
+    width: 100%;
+  }
+  
+  .profile-image {
+    max-width: 250px;
+  }
+  
+  .tech-icon {
+    display: none;
+  }
+}
