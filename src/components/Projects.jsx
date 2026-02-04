@@ -36,7 +36,32 @@ function Projects() {
       icon: "📊",
       github: "https://github.com/ibrahimyondem",
       demo: null
+    },
+    {
+      title: "ToDoHolic",
+      description: "ToDoHolic is a task management iOS application designed to help users organize daily activities in a simple and visually appealing way.",
+      technologies: ["Swift", "UIkit", "CoreData", "Xcode"],
+      image: "/todoholic_icon.png",
+      github: "https://github.com/ibrahimyondem/ToDoHolic"
+    },
+
+    {
+      title: "Simple Calculator - Desktop Application",
+      description: "A desktop calculator application built using C#, WinForms, and Visual Studio, providing basic arithmetic operations with a user-friendly interface.",
+      technologies: ["C#", "WinForms", "Visual Studio"],
+      icon: "🖥️", 
+      github: "https://github.com/ibrahimyondem/Simple-Calculator",
+    },
+
+    {
+      title: "Will You Be My Valentine?",
+      description: "A small fun and viral project to share with your valentine.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      icon: "❤️",
+      github: "https://github.com/ibrahimyondem/will-you-be-my-valentine",
+      demo: "https://ibrahimyondem.github.io/will-you-be-my-valentine/"
     }
+
   ];
 
   return (
@@ -54,7 +79,11 @@ function Projects() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="project-image">
-                <span role="img" aria-label={project.title}>{project.icon}</span>
+                {project.image ? (
+                  <img src={project.image} alt={project.title} />
+                ) : (
+                  <span role="img" aria-label={project.title}>{project.icon}</span>
+                )}
               </div>
               
               <div className="project-content">
