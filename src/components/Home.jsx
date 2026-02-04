@@ -66,7 +66,7 @@ function Home() {
         </Row>
 
         <div className="scroll-indicator">
-          <span>Scroll</span>
+          <a href="#about">Scroll</a>
           <div>↓</div>
         </div>
       </Container>
