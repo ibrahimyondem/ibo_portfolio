@@ -22,6 +22,8 @@ function App() {
     };
   }, [])
 
+  //Prevent 
+
   return (
     <div className="App">
       <NavBar />

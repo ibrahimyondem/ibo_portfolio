@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "../styles/Projects.css";
+import todoholicIcon from "../assets/todoholic_icon.png";
 
 function Projects() {
   const projects = [
@@ -12,6 +13,7 @@ function Projects() {
       github: "https://github.com/ibrahimyondem",
       demo: null
     },
+    
     {
       title: "Employee Management System",
       description: "A backend-focused employee management system with authentication, CRUD operations, and RESTful APIs tested using Postman and deployed via Docker.",
@@ -20,6 +22,7 @@ function Projects() {
       github: "https://github.com/ibrahimyondem/EmployeeManagement-Backend",
       demo: null
     },
+
     {
       title: "QuietSpace Mobile App",
       description: "A mobile application designed to help students across the GTA discover quiet and productive study locations using map-based search and community-driven reviews.",
@@ -29,6 +32,7 @@ function Projects() {
       demo: null,
       inProgress: true
     },
+
     {
       title: "COVID-19 Prediction Analysis",
       description: "A data science project analyzing COVID-19 datasets to train and evaluate machine learning models for outcome prediction and feature importance analysis.",
@@ -41,7 +45,7 @@ function Projects() {
       title: "ToDoHolic",
       description: "ToDoHolic is a task management iOS application designed to help users organize daily activities in a simple and visually appealing way.",
       technologies: ["Swift", "UIkit", "CoreData", "Xcode"],
-      image: "/todoholic_icon.png",
+      image: todoholicIcon,
       github: "https://github.com/ibrahimyondem/ToDoHolic"
     },
 

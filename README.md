@@ -4,6 +4,8 @@ Welcome to my portfolio!
 
 ## 🌟 Features
 
+[src/assets/landing_page.png]
+
 - **Responsive Design** - Works seamlessly on all devices
 - **Smooth Navigation** - Hash-based routing with smooth scrolling
 - **Project Showcase** - Detailed project cards with technologies and links
@@ -68,7 +70,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📧 Contact
 
-Ibrahim Yondem - [GitHub](https://github.com/ibrahimyondem)
+[GitHub](https://github.com/ibrahimyondem)
 
 ---
 
