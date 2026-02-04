@@ -17,7 +17,7 @@ function Projects() {
       description: "A backend-focused employee management system with authentication, CRUD operations, and RESTful APIs tested using Postman and deployed via Docker.",
       technologies: ["Node.js", "Express.js", "PostgreSQL", "Docker", "REST APIs"],
       icon: "👥",
-      github: "https://github.com/ibrahimyondem",
+      github: "https://github.com/ibrahimyondem/EmployeeManagement-Backend",
       demo: null
     },
     {
