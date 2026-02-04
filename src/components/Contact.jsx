@@ -52,7 +52,7 @@ function Contact() {
             </div>
             
             <a href={`mailto:${email}`} className="contact-email">
-              Send me an email
+              Email Me
             </a>
           </div>
         </Container>

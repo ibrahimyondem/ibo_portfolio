@@ -54,6 +54,7 @@ function Home() {
               <span className="tech-icon" role="img" aria-label="rocket">🚀</span>
               <span className="tech-icon" role="img" aria-label="bulb">💡</span>
               <span className="tech-icon" role="img" aria-label="star">⭐</span>
+              
               <img
                 src={currentAvatar}
                 alt="Ibrahim Yondem"
