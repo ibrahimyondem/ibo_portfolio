@@ -36,10 +36,6 @@ npm install
 npm run dev
 ```
 
-## 🚀 Usage
-
-After running `npm run dev`, open your browser and navigate to `http://localhost:5173`
-
 ## 📁 Project Structure
 
 ```
